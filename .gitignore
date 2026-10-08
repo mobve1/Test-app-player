@@ -1,0 +1,9 @@
+build/bin
+node_modules
+frontend/dist
+model.onnx 
+onnxruntime.dll 
+uvr-glass-player.exe 
+uvr-player.exe 
+build/    
+model.onnx 
