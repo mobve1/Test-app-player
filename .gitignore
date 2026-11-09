@@ -1,0 +1,138 @@
+# =============================================================================
+#  Stemwave V2 - .gitignore
+#  https://github.com/github/gitignore
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# CRITICAL: AI Model Weight Files (download via backend/app/downloader.py)
+# .onnx and .pth / .ckpt files can be hundreds of MB — never commit them.
+# -----------------------------------------------------------------------------
+models/*.onnx
+models/*.pth
+models/*.ckpt
+models/*.th
+models/*.pt
+models/*.yaml
+
+# Keep metadata / manifest files that live alongside the weights
+!models/mdx_model_data.json
+!models/vr_model_data.json
+!models/download_checks.json
+
+# -----------------------------------------------------------------------------
+# Runtime-generated directories
+# -----------------------------------------------------------------------------
+# Media download cache (audio/video/stem files produced at runtime)
+cache/
+# User output exports
+output/
+
+# -----------------------------------------------------------------------------
+# Python
+# -----------------------------------------------------------------------------
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache/
+.pytest_cache/
+htmlcov/
+*.log
+*.pot
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# -----------------------------------------------------------------------------
+# Node / Frontend
+# -----------------------------------------------------------------------------
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+.npm/
+.yarn/
+
+# -----------------------------------------------------------------------------
+# Generated media files (audio / video)
+# -----------------------------------------------------------------------------
+*.wav
+*.mp3
+*.flac
+*.aac
+*.ogg
+*.m4a
+*.mp4
+*.mkv
+*.webm
+*.avi
+
+# -----------------------------------------------------------------------------
+# OS & Editor artefacts
+# -----------------------------------------------------------------------------
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# JetBrains IDEs
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Vim
+*.swp
+*.swo
+*.swn
+
+# -----------------------------------------------------------------------------
+# Release & Distribution Packages
+# -----------------------------------------------------------------------------
+Stemwave-Release/
+*.zip
+
+# -----------------------------------------------------------------------------
+# Misc
+# -----------------------------------------------------------------------------
+*.bak
+*.tmp
+*.temp
