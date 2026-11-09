@@ -56,7 +56,7 @@ On-device stem separation powered by [audio-separator](https://github.com/karaok
 
 | Component | Minimum | Recommended |
 |-----------|---------|-------------|
-| **GPU** | NVIDIA GPU with CUDA support | **NVIDIA RTX 3060** (12 GB VRAM) |
+| **GPU** | NVIDIA GPU with CUDA support | **NVIDIA RTX ** (12 GB VRAM) |
 | **CUDA** | CUDA 12.x | **CUDA 12.4** |
 | **VRAM** | 4 GB | **8–12 GB** (BS-Roformer uses ~3.8 GB) |
 | **RAM** | 8 GB | 16 GB |
