@@ -29,7 +29,7 @@ Stemwave ships three playback modes that share a single synchronized timeline:
 ### 🤖 AI Audio Separation
 On-device stem separation powered by [audio-separator](https://github.com/karaokenerds/python-audio-separator), running fully offline with CUDA acceleration:
 
-| Model | Family | SDR | Speed (RTX 3060) | Best For |
+| Model | Family | SDR | Speed (RTX ) | Best For |
 |-------|--------|-----|-------------------|----------|
 | `model_bs_roformer_ep_317_sdr_12.9755.ckpt` | **BS-Roformer** | 12.97 dB 🥇 | 25×–40× real-time | Gold-standard vocal isolation |
 | `mel_band_roformer_kim_ft_unfrozen.ckpt` | **Mel-Roformer** | 12.85 dB | 22×–35× real-time | Elite lead-vocal clarity |
@@ -66,7 +66,7 @@ On-device stem separation powered by [audio-separator](https://github.com/karaok
 
 > **CPU-only mode** is supported automatically when no CUDA-capable GPU is detected, though separation will be significantly slower.
 
-> This project was developed and optimized on an **NVIDIA RTX 3060 12 GB** with **CUDA 12.4** and **PyTorch FP16 autocast** enabled for maximum throughput. Speed benchmarks above reflect this hardware.
+> This project was developed and optimized on an **NVIDIA RTX  12 GB** with **CUDA 12.4** and **PyTorch FP16 autocast** enabled for maximum throughput. Speed benchmarks above reflect this hardware.
 
 ---
 
